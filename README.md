@@ -20,4 +20,4 @@ Layout of the ibah project related to the sale of strawberries in baskets
 `Для создания прод версии проекта выполняем команду gulp build`
 
 ![Картинка][image1]
-[image1]: https://github.com/vladbers/ibah/blob/master/githubscreenshots/1.jpg
+[image1]: https://github.com/vladbers/ibah/blob/master/githubscreenshots/01.jpg
