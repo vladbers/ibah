@@ -1,0 +1,24 @@
+html, body {
+    background: #ffffff!important;
+    color: #262626;
+}
+
+.slider_header {
+    background-image: url('assets/Header.png');
+    background-size: 100%;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+}
+
+.logo {
+    width: 70px;
+}
+.navbar {
+    box-shadow: none!important;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    text-transform: none!important;
+    font-size: 14px!important;
+}
