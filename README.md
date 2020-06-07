@@ -18,5 +18,6 @@ Layout of the ibah project related to the sale of strawberries in baskets
 `Для начала разработки выполняем команду gulp start`
 
 `Для создания прод версии проекта выполняем команду gulp build`
+___________________________________
 
 ![](https://github.com/vladbers/ibah/blob/master/githubscreenshots/01.jpg)
