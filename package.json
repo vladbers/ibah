@@ -4,7 +4,8 @@
   "description": "Layout of the ibah project related to the sale of strawberries in baskets",
   "main": "index.js",
   "scripts": {
-    "start": "gulp start"
+    "start": "gulp start",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
