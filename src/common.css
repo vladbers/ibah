@@ -22,3 +22,11 @@ html, body {
     text-transform: none!important;
     font-size: 14px!important;
 }
+.nav-item .nav-link:hover {
+    transition: 0.7s;
+    color: #ff414e!important;
+}
+
+.mobile_menu_icon {
+    width: 32px;
+}
