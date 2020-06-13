@@ -38,19 +38,22 @@ html, body {
 .ibah_layer11 {
     position: absolute;
     width: 30%;
+    left: 41%;
+    top: -5vw;
+    z-index: 1;
 }
 
 .ibah_layer12 {
     position: absolute;
-    width: 30%;
+    width: 70%;
+    top: -15px;
+    z-index: 2;
 }
 
 .ibah_text_layer {
     width: 16%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -120px;
-    margin-top: 5px;
-    z-index: 1;
+    top: 25vw;
+    left: 44%;
+    z-index: 2;
 }
