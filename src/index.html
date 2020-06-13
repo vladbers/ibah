@@ -26,6 +26,7 @@
 <body>
 
 <section class="slider_header">
+    <div id="container_slide">
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container">
             <a class="navbar-brand" href="javascript:void (0);"><img src="./assets/logo.svg" class="logo"></a>
@@ -51,6 +52,11 @@
             </div>
         </div>
     </nav>
+
+        <img src="./assets/layers/layer_11.png" class="ibah_layer11" alt="ibah_layer11">
+        <img src="./assets/layers/layer_12.png" class="ibah_layer12" alt="ibah_layer12">
+        <img src="./assets/layers/text_layer.png" class="ibah_text_layer" alt="ibah_text_layer">
+    </div>
 </section>
 
 
@@ -59,4 +65,36 @@
 <script src="common.js?v=0.01"></script>
 <script src="material-kit.min.js?v=0.01"></script>
 <script src="material-kit-fix.js?v=0.01"></script>
+<script src="TweenMax.min.js?v=0.01"></script>
+<script>
+    let rect = $('#container_slide')[0].getBoundingClientRect();
+    let mouse = {x: 0, y: 0, moved: false};
+
+    $("#container_slide").mousemove(function(e) {
+        mouse.moved = true;
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+    });
+
+    // Ticker event will be called on every frame
+    TweenLite.ticker.addEventListener('tick', function(){
+        if (mouse.moved){
+            parallaxIt(".ibah_layer11", -60);
+            parallaxIt(".ibah_layer12", -30);
+            parallaxIt(".ibah_text_layer", -10);
+        }
+        mouse.moved = false;
+    });
+
+    function parallaxIt(target, movement) {
+        TweenMax.to(target, 0.3, {
+            x: (mouse.x - rect.width / 2) / rect.width * movement,
+            y: (mouse.y - rect.height / 2) / rect.height * movement
+        });
+    }
+
+    $(window).on('resize scroll', function(){
+        rect = $('#container_slide')[0].getBoundingClientRect();
+    })
+</script>
 </body>

@@ -4,7 +4,7 @@ html, body {
 }
 
 .slider_header {
-    background-image: url('assets/Header.png');
+    background-image: url('./assets/layers/hero.png');
     background-size: 100%;
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -29,4 +29,28 @@ html, body {
 
 .mobile_menu_icon {
     width: 32px;
+}
+#container_slide{
+    width: 100%;
+    height: 800px;
+}
+
+.ibah_layer11 {
+    position: absolute;
+    width: 30%;
+}
+
+.ibah_layer12 {
+    position: absolute;
+    width: 30%;
+}
+
+.ibah_text_layer {
+    width: 16%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -120px;
+    margin-top: 5px;
+    z-index: 1;
 }
