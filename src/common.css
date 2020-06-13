@@ -79,8 +79,14 @@ html, body {
     .slider_header {
         height: 500px;
     }
+    .ibah_layer3 {
+        width: 70%;
+    }
 }
 @media (max-width: 767px) {
+    .ibah_layer3 {
+        width: 100%;
+    }
     .slider_header {
         height: 250px;
     }
@@ -106,4 +112,29 @@ html, body {
     .ibah_text_layer {
         display: none;
     }
+}
+
+.batton_group_section {
+
+}
+
+.section_block {
+    padding: 10px;
+    border-radius: 4px;
+}
+.section_block_super_sucsess {
+    color: white;
+    background: #d8da77;
+}
+.section_block_sucsess {
+    color: white;
+    background: #a7ad27;
+}
+.section_block_danger {
+    color: white;
+    background: #f96257;
+}
+
+.ibah_layer3 {
+
 }

@@ -27,44 +27,65 @@
 
 <section class="slider_header">
     <div id="container_slide">
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container">
-            <a class="navbar-brand" href="javascript:void (0);"><img src="./assets/logo.svg" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ibah_menu" aria-controls="ibah_menu" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="./assets/menu_mob.png" class="mobile_menu_icon" alt="menu">
-            </button>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void (0);"><img src="./assets/logo.svg" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ibah_menu"
+                        aria-controls="ibah_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./assets/menu_mob.png" class="mobile_menu_icon" alt="menu">
+                </button>
 
-            <div class="collapse navbar-collapse" id="ibah_menu">
-                <ul class="navbar-nav ml-auto mt-2 pt-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void (0);">О продукте</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void (0);">Отзывы покупателей</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void (0);">История сорта</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void (0);">Контакты</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="ibah_menu">
+                    <ul class="navbar-nav ml-auto mt-2 pt-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void (0);">О продукте</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void (0);">Отзывы покупателей</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void (0);">История сорта</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void (0);">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
         <img src="./assets/layers/layer_11.png" class="ibah_layer11" alt="ibah_layer11">
         <img src="./assets/layers/layer_12.png" class="ibah_layer12" alt="ibah_layer12">
         <img src="./assets/layers/text_layer.png" class="ibah_text_layer" alt="ibah_text_layer">
         <button type="button" class="add_to_cart btn btn-default">Сделать заказ</button>
     </div>
 </section>
-<section class="mt-1 mb-1 text-center text_section">
-    <h3>Клубника <span>ibah (Айбах)</span> - десертный сорт, мягкий, вкусный ароматный. <br><span>Земляничный аромат</span> с нотками ананаса. Уникальная ягода <br>меняет форму от периода плодоношения.</h3>
+<section class="mt-1 mb-5 text-center text_section">
+    <div class="container">
+        <h3>Клубника <span>ibah (Айбах)</span> - десертный сорт, мягкий, вкусный ароматный.
+            <br><span>Земляничный аромат</span> с нотками ананаса. Уникальная ягода <br>меняет форму от периода
+            плодоношения.</h3>
+    </div>
 </section>
-<section>
-
+<section class="batton_group_section text-center mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section_block section_block_super_sucsess">Полезна для глаз</div>
+            </div>
+            <div class="col">
+                <div class="section_block section_block_sucsess">Повышает иммунитет</div>
+            </div>
+            <div class="col">
+                <div class="section_block section_block_danger">Предотвращает рак</div>
+            </div>
+        </div>
+    </div>
 </section>
-
+<section class="super_image text-center">
+    <div class="container">
+        <img src="./assets/layers/layer_3.png" class="ibah_layer3 w-75" alt="ibah_layer3">
+    </div>
+</section>
 
 <!-- JS-->
 <script src="libs.js?v=0.01"></script>
@@ -76,15 +97,15 @@
     let rect = $('#container_slide')[0].getBoundingClientRect();
     let mouse = {x: 0, y: 0, moved: false};
     //
-    $("#container_slide").mousemove(function(e) {
+    $("#container_slide").mousemove(function (e) {
         mouse.moved = true;
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
     });
 
     // Ticker event will be called on every frame
-    TweenLite.ticker.addEventListener('tick', function(){
-        if (mouse.moved){
+    TweenLite.ticker.addEventListener('tick', function () {
+        if (mouse.moved) {
             parallaxIt(".ibah_layer11", 25);
             parallaxIt(".ibah_layer12", -20);
             parallaxIt(".ibah_text_layer", -9);
@@ -99,7 +120,7 @@
         });
     }
 
-    $(window).on('resize scroll', function(){
+    $(window).on('resize scroll', function () {
         rect = $('#container_slide')[0].getBoundingClientRect();
     })
 </script>
