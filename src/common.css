@@ -68,9 +68,22 @@ html, body {
     border-radius: 4px!important;
     color: #f96257!important;
     top: 27vw;
-    left: 43%;
+    left: 44%;
+}
+
+.text_section h3 {}
+.text_section span {
+    color: #f96257;
+}
+@media (max-width: 900px) {
+    .slider_header {
+        height: 500px;
+    }
 }
 @media (max-width: 767px) {
+    .slider_header {
+        height: 250px;
+    }
     .add_to_cart {
         z-index: 1;
         background-color: white!important;
@@ -81,6 +94,9 @@ html, body {
     }
     .ibah_layer11 {
         display: none;
+    }
+    .text_section h3 {
+        font-size: 13px!important;
     }
 
     .ibah_layer12 {
