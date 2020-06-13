@@ -57,3 +57,37 @@ html, body {
     left: 44%;
     z-index: 2;
 }
+
+#ibah_menu {
+    z-index: 9999;
+}
+
+.add_to_cart {
+    z-index: 999999;
+    background-color: white!important;
+    border-radius: 4px!important;
+    color: #f96257!important;
+    top: 27vw;
+    left: 43%;
+}
+@media (max-width: 767px) {
+    .add_to_cart {
+        z-index: 999999;
+        background-color: white!important;
+        border-radius: 4px!important;
+        color: #f96257!important;
+        top: 17vw;
+        left: 34%;
+    }
+    .ibah_layer11 {
+        display: none;
+    }
+
+    .ibah_layer12 {
+        display: none;
+    }
+
+    .ibah_text_layer {
+        display: none;
+    }
+}

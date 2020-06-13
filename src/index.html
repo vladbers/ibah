@@ -52,10 +52,10 @@
             </div>
         </div>
     </nav>
-
         <img src="./assets/layers/layer_11.png" class="ibah_layer11" alt="ibah_layer11">
         <img src="./assets/layers/layer_12.png" class="ibah_layer12" alt="ibah_layer12">
         <img src="./assets/layers/text_layer.png" class="ibah_text_layer" alt="ibah_text_layer">
+        <button type="button" class="add_to_cart btn btn-default">Сделать заказ</button>
     </div>
 </section>
 
@@ -79,9 +79,9 @@
     // Ticker event will be called on every frame
     TweenLite.ticker.addEventListener('tick', function(){
         if (mouse.moved){
-            parallaxIt(".ibah_layer11", -60);
-            parallaxIt(".ibah_layer12", -30);
-            parallaxIt(".ibah_text_layer", -10);
+            parallaxIt(".ibah_layer11", -25);
+            parallaxIt(".ibah_layer12", -20);
+            parallaxIt(".ibah_text_layer", -40);
         }
         mouse.moved = false;
     });
