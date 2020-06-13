@@ -54,12 +54,12 @@ html, body {
     width: 16%;
     position: absolute;
     top: 25vw;
-    left: 44%;
+    left: 42%;
     z-index: 2;
 }
 
 #ibah_menu {
-    z-index: 9999;
+    z-index: 999;
 }
 
 .add_to_cart {
@@ -72,7 +72,7 @@ html, body {
 }
 @media (max-width: 767px) {
     .add_to_cart {
-        z-index: 999999;
+        z-index: 1;
         background-color: white!important;
         border-radius: 4px!important;
         color: #f96257!important;

@@ -60,6 +60,7 @@
 </section>
 
 
+
 <!-- JS-->
 <script src="libs.js?v=0.01"></script>
 <script src="common.js?v=0.01"></script>
@@ -79,9 +80,9 @@
     // Ticker event will be called on every frame
     TweenLite.ticker.addEventListener('tick', function(){
         if (mouse.moved){
-            parallaxIt(".ibah_layer11", -25);
+            parallaxIt(".ibah_layer11", 25);
             parallaxIt(".ibah_layer12", -20);
-            parallaxIt(".ibah_text_layer", -40);
+            parallaxIt(".ibah_text_layer", -9);
         }
         mouse.moved = false;
     });
