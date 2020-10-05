@@ -1,7 +1,9 @@
 /* Глобально */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-html, body {
+html {
     background-color: #FAFAFA;
+}
+body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
@@ -53,7 +55,50 @@ section div{
     padding-top: 18px;
     margin: 0 auto;
 }
+.layers {
+
+}
+/* Слои */
+#layer_1_header {
+    position: absolute;
+    top: 399px;
+    left: 575px;
+    z-index: 12;
+}
+#layer_2_header {
+    position: absolute;
+    top: 380px;
+    left: 550px;
+    z-index: 11;
+}
+#layer_3_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#layer_4_header {
+    position: absolute;
+    top: 228px;
+    left: 378px;
+    z-index: 8;
+}
+#layer_5_header {
+    position: absolute;
+    top: 67px;
+    left: 481px;
+    z-index: -5;
+    mix-blend-mode: multiply;
+}
+#layer_6_header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -7;
+}
 /* Основные Конец*/
+
+
 
 /* Мобильная версия */
 @media all and (max-width: 768px){
