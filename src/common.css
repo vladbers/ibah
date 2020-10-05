@@ -1,12 +1,12 @@
 html, body {
-    background: #ffffff!important;
+    background: #FAFAFA!important;
     color: #262626;
 }
 
 .slider_header {
     background-image: url('./assets/layers/hero.png');
     background-size: 100%;
-    background-color: #ffffff;
+    background-color: #FAFAFA;
     background-repeat: no-repeat;
     width: 100%;
     height: 800px;
@@ -74,6 +74,9 @@ html, body {
 .text_section h3 {}
 .text_section span {
     color: #f96257;
+}
+.navbar .navbar-brand {
+    z-index: 9999;
 }
 @media (max-width: 900px) {
     .slider_header {
