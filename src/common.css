@@ -47,7 +47,12 @@ nav.naviBah ul li a:hover {
 /* Меню Конец*/
 
 /* Основные */
-
+section div{
+    width: 100%;
+    max-width: 940px;
+    padding-top: 18px;
+    margin: 0 auto;
+}
 /* Основные Конец*/
 
 /* Мобильная версия */
@@ -72,6 +77,14 @@ nav.naviBah ul li a:hover {
         border-radius: 50%;
         height: 86px;
         text-align: center;
+    }
+    section div{
+        width: 100%;
+        max-width: 940px;
+        padding-top: 18px;
+        padding-left: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
     }
 }
 /* Мобильная версия Конец */
