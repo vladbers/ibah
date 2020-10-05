@@ -85,15 +85,17 @@ section div{
 }
 #layer_5_header {
     position: absolute;
-    top: 67px;
-    left: 481px;
+    top: 14%;
+    right: 33%;
     z-index: -5;
+    width: 24%;
     mix-blend-mode: multiply;
 }
 #layer_6_header {
     position: absolute;
     top: 0;
     right: 0;
+    width: 58%;
     z-index: -7;
 }
 /* Основные Конец*/
