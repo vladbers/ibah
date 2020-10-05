@@ -45,6 +45,12 @@ nav.naviBah ul li a:hover {
     transition: 0.2s;
 }
 /* Меню Конец*/
+
+/* Основные */
+
+/* Основные Конец*/
+
+/* Мобильная версия */
 @media all and (max-width: 768px){
     nav.naviBah {
         padding-left: 15px;
@@ -68,3 +74,4 @@ nav.naviBah ul li a:hover {
         text-align: center;
     }
 }
+/* Мобильная версия Конец */
